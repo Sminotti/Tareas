@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercio JSON</title>
+</head>
+<body>
+    <script>
+        var Integrantes = prompt("Ingrese uno de los siguientes nombre: Seba, Martin, Paola");
+   
+
+        const Integrante=[ 
+        
+                    {
+                        Nombre: "Seba",
+                        Edad: "41",
+                        Dedicacion:"Tecnico en Computacion",
+                        Comidas:["Ñoquis a la parisiene","Asado"],   
+                        Deportes:["Futbol,Gimnacio"],
+                        ToTMascota:true,// tiene o tuvo mascota
+                        mascotas:[
+                            {Nombre: "Lobo", tipo: "Perro", vive:false, raza:"Manto negro" },
+                            {Nombre: "Arianka", tipo: "Perro",vive:false, raza:"mezcla"},
+                        ],
+                    },
+                                
+                    {
+                        Nombre: "Martin",
+                        Edad: "6",
+                        Dedicacion:"Estudiante",
+                        Comidas:["Fideos tirabuzon con casamcrem y queso","Asado"],   
+                        Deportes:["Futbol,Karate"],
+                        ToTMascota:false,// tiene o tuvo mascota
+                    },
+                
+                    {
+                        Nombre: "Paola",
+                        Edad: "39",
+                        Dedicacion:"Administrativa",
+                        Comidas:["Milanesas,Lasagña,Asado"],   
+                        Deportes:["de profesora de matematicas ,ingles,lengua ........"],
+                        ToTMascota:true,// tiene o tuvo mascota
+                        mascotas:[
+                            {Nombre:"Pinky", tipo:"perro", vive: false, raza:"pequines"},
+                        ],
+                    }
+        ]
+
+            for (var i=0; i < 3; i++){
+
+                if (Integrantes === Integrante[i].Nombre){  
+                    document.write(`Hola me llamo ${Integrante[i].Nombre}, Tengo ${Integrante[i].Edad} años, soy ${Integrante[i].Dedicacion} y mis comidas preferidas son ${Integrante[i].Comidas}. Hago ${Integrante[i].Deportes}<br>`);
+                   for (i2=0; i2 < 2; i2++) {                         
+                        if (Integrante[i].ToTMascota==true && Integrante[i].Nombre=="Seba") {    
+                            document.write(`Tuve un perro que se llamaban ${Integrante[i].mascotas[i2].Nombre} `);
+                            i2++;
+                            document.write(`y una perra que se llamaba ${Integrante[i].mascotas[i2].Nombre}`);
+                        }else if (Integrante[i].ToTMascota==true && Integrante[i].Nombre=="Paola"){      
+                            document.write(`Tambien tuve una perrita que se llamaba ${Integrante[i].mascotas[i2].Nombre}`);
+                        }else if(Integrante[i].ToTMascota==false){
+                            document.write(`QUIERO TENER UN PERRITOOOO!!!!🐶🐶🐶🐶`);
+                            i2++;
+                         }
+                    } 
+                 }
+            }
+
+           
+            if(Integrantes != Integrante[i].Nombre){ 
+                    document.write(` Ingresa uno de la lista,no me cagues el programa!!!!!`);
+                }
+
+    </script>
+</body>
+</html>

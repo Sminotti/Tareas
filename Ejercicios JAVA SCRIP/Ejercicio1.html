@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <script>
+       
+        let cont=0;
+
+        for (let i = 0; i < 3; i++) {
+            
+            var notaParcial = parseInt(prompt(`Ingresá la nota ${i + 1} del alumno`)); 
+            
+            if(notaParcial<10){
+                cont ++;
+            }            
+            if(i == 2 && cont >= 1){
+                document.write(`Alguno de los números es menor a diez`);
+            }    
+        } 
+    </script>
+
+
+
+</body>
+</html>

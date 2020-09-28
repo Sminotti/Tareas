@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3-5(Juntos)</title>
+</head>
+<body>
+
+    <script>
+
+        const Numeros=[];
+        var positivos=0;
+        var Negativos=0;
+        var Mult15=0;
+        var Pares=0;
+        var Impares=0;
+        var SumaPares=0;
+
+        for(let i=0; i<10;i++){
+
+            var parcial=parseInt(prompt(`Ingrese el ${i+1}º numero:`));
+            Numeros.push(parcial);
+
+            if(parcial>0 && parcial%2==0 && parcial%15==0) {//si es positivo,par y multiplo de 15
+                positivos=positivos+1;
+                Pares=Pares+1;
+                Mult15=Mult15+1;
+                SumaPares=SumaPares+Numeros[i];
+            }else if(parcial>0 && parcial%2==1 && parcial%15==0){//si es positivo,no par,mult de 15
+                positivos=positivos+1;
+                Impares=Impares+1;
+                Mult15=Mult15+1;
+            }else if(parcial>0 && parcial%2==0 && parcial%15>=1){//si es positivo,par y no mult 15
+                positivos=positivos+1;
+                Pares=Pares+1;  
+                SumaPares=SumaPares+Numeros[i];  
+            }else if(parcial>0 && parcial%2==1 && parcial%15>=1){//si es positivo,no par,no mult 15
+                positivos=positivos+1;
+                Impares=Impares+1;
+            }else if(parcial<0 && parcial%2==-0 && parcial%15==-0){// si es negativo,par y multiplo de 15
+                Negativos=Negativos+1;
+                Pares=Pares+1;                 
+                Mult15=Mult15+1;
+                SumaPares=SumaPares+Numeros[i];
+            }else if(parcial<0 && parcial%2==-1 && parcial%15==-0){//si es negativo,no par,si mult de 15
+                Negativos=Negativos+1;
+                Impares=Impares+1;
+                Mult15=Mult15+1;
+            }else if(parcial<0 && parcial%2==-0 && parcial%15<=-1){// si es negativo,si par,no mult 15
+                Negativos=Negativos+1;
+                Pares=Pares+1;
+                SumaPares=SumaPares+Numeros[i];
+            }else if(parcial<0 && parcial%2==-1 && parcial%15<=-1){//si es negativo,no par,no mult 15
+                Negativos=Negativos+1;
+                Impares=Impares+1;
+            }
+
+            console.log(Numeros);
+            console.log(i);
+            console.log(positivos);
+            console.log(Negativos);
+            console.log(Pares);
+            console.log(Impares);
+            console.log(Mult15);
+            console.log(SumaPares);
+        }
+
+        document.write(`La cantidad de numeros negativos ingresados es:       ${Negativos} <br>`);
+        document.write(`La cantidad de numeros positivos ingresados es:       ${positivos} <br>`);
+        document.write(`La cantidad de numeros multiplos de 15 ingresados es: ${Mult15}    <br>`);
+        document.write(`La cantidad de numeros pares inesados es:             ${Pares}     <br>`);
+        document.write(`La cantidad de numeros impares ingresados es:         ${Impares}   <br>`);
+        document.write(`La suma total de los ingresados pares es:             ${SumaPares}     `);
+
+    </script>
+</body>
+</html>

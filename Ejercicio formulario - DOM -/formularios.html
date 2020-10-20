@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtrar Empleados</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="formularios.js"></script>
+  </head>
+  <body>
+    <!-- EMMET-->
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form action="">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="nombre"
+                    placeholder="nombre"
+                    class="form-control"
+                    autofocus
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="apellido"
+                    placeholder="apellido"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="email"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                    <input
+                      type="number"
+                      id="edad"
+                      placeholder="edad"
+                      class="form-control"
+                    />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="dni"
+                    placeholder="dni"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <select id="rango" name="rango" class="form-control">
+                    <option value="">Elija opción</option>      
+                    <option value="Gerente">Gerente</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                </div>
+                <button type="button" class="btn btn-primary btn-block" id="enviar">
+                  Enviar
+                </button>
+            </form>
+        </div><!--cierre columna derecha-->
+            <div class="col-6">
+              <input type="checkbox" name="gerente" id="gerente">Gerente<br>
+              <input type="checkbox" name="otro" id="otro">Otro<br>
+              <input type="checkbox" name="mayor40" id="mayor40">Mayor de 40 años
+            </div>
+      </div><!--cierre row-->
+    </div><!--cierre container-->
+  </body>
+</html>

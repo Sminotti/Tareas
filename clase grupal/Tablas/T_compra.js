@@ -1,0 +1,50 @@
+
+const compra=[
+    {
+        idCompra:1,
+        idUsuario:1,
+        idDireccion:"",
+        idEstadoPago:"",
+        fechaCompra:"",
+        ts_create:"",
+        ts_update:"",
+    },
+    {
+        idCompra:2,
+        idUsuario:1,
+        idDireccion:"",
+        idEstadoPago:"",
+        fechaCompra:"",
+        ts_create:"",
+        ts_update:"",
+    },
+    {
+        idCompra:3,
+        idUsuario:1,
+        idDireccion:"",
+        idEstadoPago:"",
+        fechaCompra:"",
+        ts_create:"",
+        ts_update:"",
+    },
+    {
+        idCompra:4,
+        idUsuario:1,
+        idDireccion:"",
+        idEstadoPago:"",
+        fechaCompra:"",
+        ts_create:"",
+        ts_update:"",
+    },
+    {
+        idCompra:5,
+        idUsuario:1,
+        idDireccion:"",
+        idEstadoPago:"",
+        fechaCompra:"",
+        ts_create:"",
+        ts_update:"",
+    }
+]
+
+module.exports = compra;

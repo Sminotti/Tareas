@@ -1,0 +1,24 @@
+<div class="container text-center">
+    <div class="row ">
+        <div class="col-4 m-auto">
+
+            {{!-- Method  : como y action : a donde!--}}
+            <form method="post" action="/login/ingreso">
+                <div class="card text-white bg-dark mt-5" style="max-width: 28rem;">
+                    <div class="card-header" style="border-color: white;">Logueate</div>
+                    <div class="card-body ">
+                        <div>
+                            <input class="form-control" type="email" name="logUsuario" id="LogUsuario" placeholder="Ingrese usuario">
+                        </div>
+                        <div class="pt-2">
+                            <input class="form-control" type="password" name="logPassword" id="LogPassword" placeholder="Ingrese password">
+                        </div>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                </div>
+            </form>
+            <span>{{message}}</span>
+        </div>
+    </div>
+</div>

@@ -1,21 +1,19 @@
 <div class="container">
-    <div class="row">
-        <div class="col">
+    <div class="row  m-auto">
+        <div class="col mt-5">
             <table class="table table-hover text-center">
-                <thead>
+                <thead class="thead-dark">
                     <th>ID</th>
-                    <th>Nombre completo</th>
-                    <th>Edad</th>
+                    <th>Nombre de Ususario</th>
                     <th></th>
                 </thead>
                 <tbody>
-                    {{#each users}}
+                    {{#each T_usuario}}
                     <tr>
-                        <td>{{id}}</td>
-                        <td>{{nombre}} {{apellido}}</td>
-                        <td>{{edad}}</td>
+                        <td>{{idUsuario}}</td>
+                        <td>{{user}}</td>
                         <th>
-                            <a href="/users/single/{{id}}" class="btn btn-link">Ver más</a>
+                            <a href="/users/single/{{idUsuario}}" class="btn btn-link">Ver más</a>
                         </th>
                     </tr>
                     {{/each}}

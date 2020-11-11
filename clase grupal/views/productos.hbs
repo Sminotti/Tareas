@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row m-auto">
+        <div class="col mt-5">
+            <table class="table table-hover text-center">
+                <thead class="thead-dark">
+                    <th>ID</th>
+                    <th>Nombre Producto</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    {{#each T_producto}}
+                    <tr>
+                        <td>{{idProducto}}</td>
+                        <td>{{producto}}</td>
+                        <td>{{marca}}</td>
+                        <td>{{precio}}</td>
+                        <th>
+                            <a href="/productos/single/{{idProducto}}" class="btn btn-link">Ver más</a>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,8 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const registro = require("./routes/registro");
 const login = require("./routes/login");
+const admin = require("./routes/admin");
+const productos = require("./routes/productos");
 
 var app = express();
 
@@ -30,6 +32,8 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/registro", registro);
 app.use("/login", login);
+app.use("/admin", admin);
+app.use("/productos", productos);
 
 console.log("MAIL SERVICE : ", process.env.MAIL_SERVICE);
 // catch 404 and forward to error handler

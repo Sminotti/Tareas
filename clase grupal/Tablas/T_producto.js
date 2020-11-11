@@ -3,7 +3,9 @@ const producto =[
   
     {
         idProducto:1,
-        producto:"",
+        producto:"Placa de video 4 gb",
+        marca:"NVIDIA GFORCE",
+        modelo:"GB-800",
         precio:30.00,
         habilitado:1,
         eliminado:0,
@@ -12,7 +14,9 @@ const producto =[
     },
     {
         idProducto:2,
-        producto:"",
+        producto:"Memoria Rma 4 gb",
+        marca:"Rufus",
+        modelo:"CON DISIPADOR",
         precio:30.00,
         habilitado:1,
         eliminado:0,
@@ -21,7 +25,9 @@ const producto =[
     },
     {
         idProducto:3,
-        producto:"",
+        producto:"Gabinete Server",
+        marca:"Talent",
+        modelo:"BLACK SERIA 10000",
         precio:30.00,
         habilitado:1,
         eliminado:0,
@@ -30,7 +36,9 @@ const producto =[
     },
     {
         idProducto:4,
-        producto:"",
+        producto:"Mother Amd",
+        marca:"Gigabyte",
+        modelo:"AXT RED",
         precio:30.00,
         habilitado:1,
         eliminado:0,
@@ -39,7 +47,9 @@ const producto =[
     },
     {
         idProducto:5,
-        producto:"",
+        producto:"Microprocesador",
+        marca:"Amd",
+        modelo:"A10",
         precio:30.00,
         habilitado:1,
         eliminado:0,

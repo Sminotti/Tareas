@@ -3,23 +3,23 @@ const provincia=[
     
     {
         idProvincia:1,
-        provincia:"",
+        provincia:"Buenos Aires",
     },
     {
         idProvincia:2,
-        provincia:"",
+        provincia:"Jujuy",
     },
     {
         idProvincia:3,
-        provincia:"",
+        provincia:"Catamarco",
     },
     {
         idProvincia:4,
-        provincia:"",
+        provincia:"Santa Fe",
     },
     {
         idProvincia:5,
-        provincia:"",
+        provincia:"Formosa",
     },
 ]
 

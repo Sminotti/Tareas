@@ -1,0 +1,23 @@
+<div class="container ">
+    <div class="row m-auto">
+        <div class="col">
+            <table class="table table-hover text-center">
+                <thead class="thead-dark">
+                    <th>ID</th>
+                    <th>Nombre Usuario</th>
+                </thead>
+                <tbody>
+                    {{#each T_Compra}}
+                    <tr>
+                        <td>{{idCompra}}</td>
+                        <td>{{idUsusario}}</td>
+                        <th>
+                            <a href="/compras/single/{{idCompra}}" class="btn btn-link">Ver más</a>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

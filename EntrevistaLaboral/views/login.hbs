@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <div class="row justify-content-center h-100 align-items-center">
+        <div class="col-4">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header" style="border-color: aliceblue;">Login</div>
+                <div class="card-body">
+                    <h5 class="card-title">Ingrese </h5>
+                    <form method="post" action="/login">
+                        <div class="form-group">
+                            <label id="usuario">
+                                <h4>Usuario</h4>
+                            </label>
+                            <input type="text" name="usuario" class="form-control" placeholder="usuario" required="">
+                        </div>
+                        <div class="form-group">
+                            <label id="password">
+                                <h4>Contraseña</h4>
+                            </label>
+                            <input type="password" name="password" class="form-control" placeholder="****" required="">
+                        </div>
+                        <button type="submit" class="btn btn-block text-white bg-dark " style="border-color: aliceblue;">
+                            <p>Ingresar</p>
+                        </button>
+                    </form>
+                    <span>{{message}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

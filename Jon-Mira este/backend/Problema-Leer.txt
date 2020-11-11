@@ -1,0 +1,5 @@
+1- al hacer click en icono para que se oculte la nabvar lateral desaparece toda la navbar .
+2- nunca me reconoce la ruta de los links
+
+en el otro lyuot que dice lyoutOK puse otra barra normal y anda lo mas bien.
+
